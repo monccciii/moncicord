@@ -9,6 +9,17 @@ function Home() {
     return (
       <div style={{width:'90%', margin:'auto auto', textAlign:'center'}}>
             <h1>Home</h1>
+            <Button
+            style={{marginRight:'3vw'}}
+            href='/login'
+            variant='outline-dark'>
+            Login
+            </Button>
+            <Button
+            href='/register'
+            variant='outline-dark'>
+            Register
+            </Button>
       </div>
     );
   }
