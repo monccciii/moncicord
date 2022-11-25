@@ -20,8 +20,9 @@ function Chat() {
     const [tmpmsgcontent, setTmpmsgcontent] = useState('')
     useEffect(() => {
         setUser(localStorage.getItem('loggedInas'))
+        getMessages()
 
-    })
+    }, [reducerValue]);
 
 
 function getMessages() {
@@ -60,7 +61,8 @@ useEffect(() => {
         .post("http://localhost:3001/sendmessage", messagecontent)
         .then(res => console.log(res))
         .catch((err) => console.log(err))
-        forceUpdate()
+
+       forceUpdate()
         forceUpdate()
     }
 
@@ -93,8 +95,9 @@ useEffect(() => {
                         onChange={handleChange}
                         />
                     </Form.Group>
+                    <br></br>
                     <Button
-                    variant="outline-success"
+                    variant="outline-dark"
                     onClick={handleClick}
                     >
                         SEND MESSAGE
