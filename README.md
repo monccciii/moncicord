@@ -20,3 +20,11 @@ Backlog:
 - create mobile (react native) vers
 
 - Deploy!!!
+
+![image](https://user-images.githubusercontent.com/44330082/203902339-c3385b60-e6ed-473c-9212-e6c007111f5c.png)
+
+![image](https://user-images.githubusercontent.com/44330082/203902528-482afaca-99a4-4a2d-9612-59def0b2f775.png)
+
+![image](https://user-images.githubusercontent.com/44330082/203902611-76209936-6555-4dcc-a545-4cdcf733c124.png)
+
+![image](https://user-images.githubusercontent.com/44330082/203903420-56c3f739-4ae8-494e-9e5b-b1da9412a19c.png)
