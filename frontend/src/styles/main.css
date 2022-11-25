@@ -70,21 +70,43 @@
 .upperdiv {
     font-size: large;
     background-color:#36393F;
-    height: 40%;
+    height: 60%;
     width: 100%;
 }
 .lowerdiv {
     font-family: 'Roboto', sans-serif;
-    height: 40%;
+    height: 200vh;
     width: 100%;
 }
 
+.responsiveimg1 {
+    float: right;
+}
+
 .upperdivtext {
+    
     display:inline-block;
     text-align: justify;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Acme', sans-serif;
     color:white;
+}
+
+.disbutton {
+    font-family: 'Racing Sans One', cursive;
+    background-color: #5865F2;
+    font-size: 50px
+
+}
+
+#indented {
+    margin-left: 10vw;
+}
+
+.li2 {
+    color: white;
+    font-size: medium;
+    margin: 0 5rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -93,3 +115,25 @@
         height: auto;
     }
   }
+
+@media screen and (max-width: 768px) {
+    .li2 {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #indented {
+        margin-left: 5vw;
+    }
+    .li2 {
+        
+        margin: 0 -1rem;
+    }
+}
+
+.footer {
+    height:25vh;
+    
+    background-color: #06001c;
+}
