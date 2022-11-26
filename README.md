@@ -30,10 +30,13 @@ Home:
 
 
 
+Register:
+![image](https://user-images.githubusercontent.com/44330082/204078679-00c3fe85-0112-4590-93c5-4d07ab5680a2.png)
 
-![image](https://user-images.githubusercontent.com/44330082/203902528-482afaca-99a4-4a2d-9612-59def0b2f775.png)
+Login:
+![image](https://user-images.githubusercontent.com/44330082/204078687-5d8f13b0-6b09-4e6b-b298-bb4001130ac7.png)
 
-![image](https://user-images.githubusercontent.com/44330082/203902611-76209936-6555-4dcc-a545-4cdcf733c124.png)
+*Both register and login have popup anims
 
 ![image](https://user-images.githubusercontent.com/44330082/203903420-56c3f739-4ae8-494e-9e5b-b1da9412a19c.png)
 
