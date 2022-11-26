@@ -22,11 +22,12 @@ Backlog:
 - Deploy!!!
 
 Home:
-![image](https://user-images.githubusercontent.com/44330082/204032664-463f7408-2fd8-49a2-8e42-f72986e22df3.png)
+![image](https://user-images.githubusercontent.com/44330082/204078629-d3523b35-693a-47c2-8017-22063882643b.png)
 
-![image](https://user-images.githubusercontent.com/44330082/204032736-fcd24fb6-d54c-4eff-88d4-6e7b14e6e32f.png)
+![image](https://user-images.githubusercontent.com/44330082/204078642-99187068-1644-4951-b275-0964942966f6.png)
 
-![image](https://user-images.githubusercontent.com/44330082/204032785-5ad8307c-11e2-4128-aacf-c62ec68ddda7.png)
+![image](https://user-images.githubusercontent.com/44330082/204078652-855e7ed0-7993-47de-936e-c5965ecc87de.png)
+
 
 
 
