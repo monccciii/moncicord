@@ -52,6 +52,10 @@
     display: inline-block;
 }
 
+.navbar_ li:hover {
+    text-decoration:underline;
+}
+
 .navbar_ .buttonb {
     float: right;
     margin-left: 5vw;
@@ -75,7 +79,7 @@
 }
 .lowerdiv {
     font-family: 'Roboto', sans-serif;
-    height: 200vh;
+    height: 150vh;
     width: 100%;
 }
 
@@ -133,7 +137,28 @@
 }
 
 .footer {
-    height:25vh;
-    
+    height:50vh;
+    width: 100% !important;
+    position: relative;
+    bottom: 0;
     background-color: #06001c;
+}
+
+.backimg1 {
+    background-image: url('./images/background1.png')
+}
+
+.registerloginbox {
+    border-radius: 10px;
+    text-align:center;
+    height: auto;
+    padding: auto;
+    width: 40vw;
+    background-color: #36393F
+}
+
+.loginn {
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+
 }
