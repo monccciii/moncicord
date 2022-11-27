@@ -2,9 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {useEffect, useState} from "react";
 import axios from 'axios';
-import { Button, Form, Overlay, OverlayTrigger, Popover } from "react-bootstrap";
-
-
+import { Button, Form, Overlay, OverlayTrigger, Popover, Container} from "react-bootstrap";
+import background1 from '../styles/images/background1.png';
+import background2 from '../styles/images/background2.png';
+import Zoom from 'react-reveal/Zoom';
 
 function Login() {
     const navigate = useNavigate();
@@ -54,36 +55,50 @@ function Login() {
 
 
     return (
-      <div style={{width:'90%', margin:'auto auto', textAlign:'center'}}>
-            <h1>Login</h1>
+      <div style={{width:'100vw', height: '100vh', textAlign:'center', backgroundImage: "url(" + background1 + ")", backgroundSize:'auto', backgroundRepeat:'no-repeat'}}>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Zoom>
+            <Container className='registerloginbox'>
+            <h1 className='loginn'><br />Welcome back!</h1>
+            <p style={{color:'white',fontFamily:"'Roboto', sans-serif"}}>We're so excited to see you again!</p>
             <Form>
+                <p style={{color: 'white', fontFamily:"'Roboto', sans-serif", textAlign:'left'}}>Username</p>
                 <Form.Group>
                     <Form.Control
                     name="username"
                     value={account.username}
-                    placeholder="username"
-                    style={{ marginBottom: "1rem"}}
+                    style={{ backgroundColor:'#36393F', marginBottom: "1rem", color:'white'}}
                     onChange={handleChange}
                     />
+                    <p style={{color: 'white', fontFamily:"'Roboto', sans-serif", textAlign:'left'}}>Password</p>
                 <Form.Control
                     name="password"
                     value={account.password}
-                    placeholder="password"
-                    style={{ marginBottom: "1rem"}}
+                    type="password"
+                    style={{ backgroundColor:'#36393F', marginBottom: "1rem", color:'white'}}
                     onChange={handleChange}
                     />
                 </Form.Group>
                 <Button
-                style={{width: "100%", marginBottom:"1rem"}} 
-                variant="outline-success"
+                style={{width: "100%", marginBottom:"1rem", backgroundColor: '#5865F2'}} 
                 onClick={handleClick}
-                >Login</Button>
+                >Log In</Button>
+                <p style={{color:'white', fontFamily:"'Roboto', sans-serif"}}>Don't have an account? <a href="/register">Register.</a></p>
+                <br />
             </Form>
             <div>
-                {isLoggedin === false && <div style={{backgroundColor:'red', color: 'white'}}>
+                {isLoggedin === false && <div style={{backgroundColor:'red', color: 'white', fontFamily:"'Roboto', sans-serif"}}>
                     Incorrect username or password. Please try again or <a href="/register">make a new account. </a>
                     </div>}
             </div>
+            </Container>
+            </Zoom>
       </div>
     );
   }

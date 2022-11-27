@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { useNavigate} from 'react-router-dom';
+import { useNavigate, useParams} from 'react-router-dom';
 import {useEffect, useState} from "react";
 import axios from 'axios';
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
@@ -8,7 +8,10 @@ import MessageComp from './messageComp';
 import discordicon from '../styles/images/discordicon.png'
 
 
-function Chat() {
+function ChatroomsChat() {
+    const chatroom = useParams();
+    const chatroom2json= JSON.stringify(chatroom);
+    const currentChatroom = JSON.parse(chatroom2json);
     const [user, setUser] = useState('');
     const [messages, setMessages] = useState( [] ); 
     const [messagecontent, setMessagecontent] = useState({
@@ -19,28 +22,30 @@ function Chat() {
         chatroomname: ''
     });
     const [chatrooms, setChatrooms] = useState( [] );
-    const [currentChatroom, setcurrentChatroom] = useState();
 
     const [reducerValue, forceUpdate] = useReducer(x => x + 1, 0);
 
     useEffect(() => {
         setUser(localStorage.getItem('loggedInas'))
+        console.log(currentChatroom.crn)
         getMessages()
-
     }, [reducerValue]);
 
 
 function getMessages() {
-    axios.get("http://localhost:3001/messages")
+    const url = `http://localhost:3001/messages/${currentChatroom.crn}`
+    axios.get(url)
     .then(res => {
         console.log(res);
         setMessages(res.data);
+        console.log(messages);
     })
     .catch(err => console.log(err));
 }
 
 function getChatrooms() {
     axios.get("http://localhost:3001/chatrooms")
+
     .then(res => {
         console.log(res);
         setChatrooms(res.data);
@@ -77,9 +82,10 @@ useEffect(() => {
 
     const handleClick = (e) => {
         e.preventDefault();
+        const url = `http://localhost:3001/sendmessage/${currentChatroom.crn}`
 
         axios
-        .post("http://localhost:3001/sendmessage", messagecontent)
+        .post(url, messagecontent)
         .then(res => console.log(res))
         .catch((err) => console.log(err))
         messagecontent.chat = ''
@@ -96,9 +102,8 @@ useEffect(() => {
         .then(res => console.log(res))
         .catch((err) => console.log(err))
         console.log("bruh:", chatroomname)
-        e.target.value = ''
+        chatroom.chatroomname = ''
        forceUpdate()
-        forceUpdate()
         forceUpdate()
     }
 
@@ -112,7 +117,7 @@ useEffect(() => {
             <Row className='fluidcontainerbox fluidcontainerbox2'>
                 <Col sm={2}>
                 <h1 style={{fontSize:'2vw', fontFamily:"'Roboto', sans-serif"}}>Chatrooms</h1>
-                <p style={{fontFamily:"'Roboto', sans-serif"}}>Current Room: Main</p>
+                <p style={{fontFamily:"'Roboto', sans-serif"}}>Current Room: {currentChatroom.crn}</p>
                 <hr />
                 <a href="/chat">
                 <MessageComp
@@ -185,5 +190,5 @@ useEffect(() => {
     );
   }
   
-  export default Chat;
+  export default ChatroomsChat;
   
