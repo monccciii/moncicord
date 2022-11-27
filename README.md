@@ -22,7 +22,7 @@ Backlog:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PROJECT HAS BEEN PUT ON HOLD.
 
-During the creation of this project, I learned a lot about database organization and learned more about responsive design.  Database organization has always mystified me, how can you organiza data if they're not in nested databases/collections?  However, I learned through much (much) research and YouTube videos.  Responsive design was also a confusing concept to me.  I didn't understand (or know) that the site could look different, and I previously assumed that it automatically was responsive.  But now, Continuing with this project would be great, however, now that I know most of the functionality, it would be a waste of time as I am not learning something new.  Now, that I have grasped a stronger idea of front-end design and back-end functionality, I shall move onto projects that use more skill and expertise.  I will not be aborting this project, but I will not be working on this often.
+During the creation of this project, I learned a lot about database organization and learned more about responsive design.  Database organization has always mystified me, how can you organiza data if they're not in nested databases/collections?  However, I learned through much (much) research and YouTube videos.  Responsive design was also a confusing concept to me.  I didn't understand (or know) that the site could look different, and I previously assumed that it automatically was responsive.  Also, through this project, I learned about useEffect, useState, and other lifecycle methods.  Starting this project, I understood none of these except useState, but even that I lacked knowledge in.  Through repeated research and videos, I found out more and more and eventually found my way to writing code using these methods.  I really wanted to give up, truly.  I felt the voices in my head telling me, "You won't understand these methods.  You won't understand how to design a site.  You won't understand how to use a database" but I tried my best to shut them up and complete my goal. Continuing with this project would be great, however, now that I know most of the functionality, it would be a waste of time as I am not learning something new.  Now, that I have grasped a stronger idea of front-end design and back-end functionality, I shall move onto projects that use more skill and expertise.  My long term goals is to be able to create high-level apps by myself and kickstart a startup.  My short term goals are to gather more internship experience, get my first job, and complete a few freelance gigs. I will not be aborting this project, but I will not be working on this often.
 
 Possible upcoming projects:
 - Snapchat Clone (React Native)
@@ -32,6 +32,9 @@ Possible upcoming projects:
 I'm very excited to work on mobile apps, so creating my debut with React Native will be great.
 Thanks to all who were interested in this project,
 Monci
+
+DEPLOYED AT:
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
