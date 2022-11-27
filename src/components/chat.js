@@ -31,7 +31,7 @@ function Chat() {
 
 
 function getMessages() {
-    axios.get("http://localhost:3001/messages")
+    axios.get("https://zany-gray-gazelle-shoe.cyclic.app/messages")
     .then(res => {
         console.log(res);
         setMessages(res.data);
@@ -40,7 +40,7 @@ function getMessages() {
 }
 
 function getChatrooms() {
-    axios.get("http://localhost:3001/chatrooms")
+    axios.get("https://zany-gray-gazelle-shoe.cyclic.app/chatrooms")
     .then(res => {
         console.log(res);
         setChatrooms(res.data);
@@ -79,7 +79,7 @@ useEffect(() => {
         e.preventDefault();
 
         axios
-        .post("http://localhost:3001/sendmessage", messagecontent)
+        .post("https://zany-gray-gazelle-shoe.cyclic.app/sendmessage", messagecontent)
         .then(res => console.log(res))
         .catch((err) => console.log(err))
         messagecontent.chat = ''
@@ -92,7 +92,7 @@ useEffect(() => {
 
         console.log("bruh:", chatroomname)
         axios
-        .post("http://localhost:3001/createchatroom", chatroomname)
+        .post("https://zany-gray-gazelle-shoe.cyclic.app/createchatroom", chatroomname)
         .then(res => console.log(res))
         .catch((err) => console.log(err))
         console.log("bruh:", chatroomname)
