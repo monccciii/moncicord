@@ -8,11 +8,18 @@
 }
 
 .fluidcontainerbox {
-    margin: auto auto;
+    margin: 0 5rem;
+    margin-top: 5vh;
     height: 700px;
-    width: 700px;
-    border:2px black solid;
+    width: 80vw;
+
+}
+.fluidcontainerbox2 {
     overflow: scroll;
+}
+
+.outline {
+    border: 5px black solid; 
 }
 
 ::-webkit-scrollbar {
@@ -21,11 +28,13 @@
 }
 
 .message {
+    font-family: 'Roboto', sans-serif;
     margin: auto auto;
-    font-size: small;
-    padding: 0px;
+    font-size: 15px;
     height: 50px;
-    border:2px black solid;
+    border-width: 0px 0.05em 0.005em 0; /* top right bottom left */
+    border-style: solid solid solid solid;
+    border-color: white;
 }
 
 .fromname {
@@ -43,7 +52,6 @@
     padding: 0px;
     height: 50px;
     width: 700px;
-    border:2px black solid;
 }
 
 .navbar_ li {
@@ -161,4 +169,27 @@
     font-family: 'Racing Sans One', cursive;
     color: white;
 
+}
+
+.chatbg {
+    background-color:#36393F;
+    color: white;
+    height:100vh;
+}
+
+.forcedbg {
+    background-color:#36393F;
+}
+.chatbg a {
+    color: white;
+    text-decoration: none;
+}
+.chatheader {
+    background-color: #28282B;
+}
+
+.sideborder {
+    border-width: 0px 0.05em 0px 0; /* top right bottom left */
+    border-style: solid solid solid solid;
+    border-color: white;
 }
