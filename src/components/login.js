@@ -46,7 +46,7 @@ function Login() {
             const data = 
             e.preventDefault()
             const response = await axios
-            .post("http://localhost:3001/login", account)
+            .post("https://zany-gray-gazelle-shoe.cyclic.app/login", account)
             .then(res => setresponseData(res['data']))
         } catch(err) {
             console.log(err);
