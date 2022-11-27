@@ -33,6 +33,22 @@ app.post("/register", (req, res) => {
     .catch(err => console.log(err));
 })
 
+app.post("/isnameregistered", (req, res) => {
+    const findname = req.body.username
+    Account.find({username: findname}, (error, data) => {
+        if(error) {
+            console.log(error)
+        } else {
+            console.log(data)
+            if (data.length < 1) {
+                res.json(true)
+            } else {
+                res.json(false)
+            }
+        }
+    })
+})
+
 app.post("/login", (req, res) => {
     const findname = req.body.username
     const checkpass = req.body.password
@@ -61,6 +77,8 @@ const messageSchema = mongoose.Schema({
 
 const Message = mongoose.model("Message", messageSchema)
 
+// const ChatroomMessage = mongoose.model("")
+
 app.post("/sendmessage", (req, res) => {
     Message.create({
         from: req.body.from,
@@ -70,21 +88,65 @@ app.post("/sendmessage", (req, res) => {
 });
 
 
+app.post("/sendmessage/:room", (req, res) => {
+    const room = req.params.room
+    try {
+    const NewChatroom = mongoose.model(room, messageSchema)
+    NewChatroom.create({
+        from: req.body.from,
+        messagecontent: req.body.chat
+    }). then(doc => console.log(doc))
+    .catch(err => console.log(err));
+    }
+    catch {
+        db.room.create({
+            from: req.body.from,
+            messagecontent: req.body.chat
+        }). then(doc => console.log(doc))
+        .catch(err => console.log(err));
+    }
+});
+
+
 app.get("/messages", (req, res) => {
     Message.find()
     .then((items) => res.json(items))
     .catch((err) => console.log(err))
 });
 
+app.get("/messages/:room", (req, res) => {
+    const room = req.params.room
+    try {
+    const NewChatroom = mongoose.model(room, messageSchema)
+    NewChatroom.find()
+    .then((items) => res.json(items))
+    .catch((err) => console.log(err)) 
+    } catch {
+    const db = mongoose.connection;
+    db.room.find()
+    .then((items) => res.json(items))
+    .catch((err) => console.log(err)) 
+    }
+});
+
 const chatroomSchema = mongoose.Schema({
-    name: { type: String, required: true},
+    chatroomname: { type: String, required: true},
 })
 
 const Chatroom = mongoose.model("Chatroom", chatroomSchema)
 
 app.post("/createchatroom", (req, res) => {
+    console.log(req.body)
+
+    const messageSchema = mongoose.Schema({
+        from: { type: String, required: true},
+        messagecontent: { type: String, required: true }
+    })
+    const NewChatroom = mongoose.model(`${req.body.chatroomname}`, messageSchema)
+
+
     Chatroom.create({
-        name: req.body.chatroomname
+        chatroomname: req.body.chatroomname
     }). then(doc => console.log(doc))
     .catch(err => console.log(err));
 });
