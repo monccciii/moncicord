@@ -34,7 +34,7 @@ function ChatroomsChat() {
 
 
 function getMessages() {
-    const url = `http://localhost:3001/messages/${currentChatroom.crn}`
+    const url = `https://zany-gray-gazelle-shoe.cyclic.app/messages/${currentChatroom.crn}`
     axios.get(url)
     .then(res => {
         console.log(res);
@@ -45,7 +45,7 @@ function getMessages() {
 }
 
 function getChatrooms() {
-    axios.get("http://localhost:3001/chatrooms")
+    axios.get("https://zany-gray-gazelle-shoe.cyclic.app/chatrooms")
 
     .then(res => {
         console.log(res);
@@ -83,7 +83,7 @@ useEffect(() => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        const url = `http://localhost:3001/sendmessage/${currentChatroom.crn}`
+        const url = `https://zany-gray-gazelle-shoe.cyclic.app/sendmessage/${currentChatroom.crn}`
 
         axios
         .post(url, messagecontent)
@@ -99,7 +99,7 @@ useEffect(() => {
 
         console.log("bruh:", chatroomname)
         axios
-        .post("http://localhost:3001/createchatroom", chatroomname)
+        .post("https://zany-gray-gazelle-shoe.cyclic.app/createchatroom", chatroomname)
         .then(res => console.log(res))
         .catch((err) => console.log(err))
         console.log("bruh:", chatroomname)
