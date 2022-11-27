@@ -38,6 +38,6 @@ Login:
 
 *Both register and login have popup anims
 
-![image](https://user-images.githubusercontent.com/44330082/203903420-56c3f739-4ae8-494e-9e5b-b1da9412a19c.png)
+![image](https://user-images.githubusercontent.com/44330082/204123540-6cfd4f3a-d9d8-447d-ab86-6d17a4996a80.png)
 
-![image](https://user-images.githubusercontent.com/44330082/203904538-164c7943-c5b0-4ca5-86fc-f2f6cf155495.png)
+![image](https://user-images.githubusercontent.com/44330082/204123553-04e99f6c-6ebe-40b9-9cdd-b6fbdaf24d84.png)
