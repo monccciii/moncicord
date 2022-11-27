@@ -31,7 +31,7 @@ function Register() {
 
     const checkIfaccountexists = () => {
         axios
-        .post("http://localhost:3001/isnameregistered", account)
+        .post("https://zany-gray-gazelle-shoe.cyclic.app/isnameregistered", account)
         .then(res => {
             console.log(res);
             setDoesaccountexist(res.data);
@@ -43,7 +43,7 @@ function Register() {
     const checkIfavailabletoregister = () => {
         if (doesaccountexist === true) {
             axios
-            .post("http://localhost:3001/register", account)
+            .post("https://zany-gray-gazelle-shoe.cyclic.app/register", account)
             .then(res => console.log(res))
             .catch((err) => console.log(err));
             setSuccessfullycreated(true)
