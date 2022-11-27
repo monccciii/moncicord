@@ -1,68 +1,70 @@
-# moncicord
+# Getting Started with Create React App
 
-This is a bootleg discord project using the MERN Stack
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It will have:
-- Servers
-- Direct Messages
-- Friend System
-- Mobile Version
+## Available Scripts
 
-Progress: 60%(?)
-To Do:
-- add Update and Delete
-- revamp UI
-- create friend system (must be loaded in some way, possibly localstorage -> may need a whole page to gather account info and load into localstorage)
+In the project directory, you can run:
 
-Backlog:
-- create server/channel system + joining/leaving server system (create servers, talk in channels, leave servers)
-- learn about and find out how to use JWT
-- create mobile (react native) ver.
+### `npm start`
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PROJECT HAS BEEN PUT ON HOLD.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-During the creation of this project, I learned a lot about database organization and learned more about responsive design.  Database organization has always mystified me, how can you organiza data if they're not in nested databases/collections?  However, I learned through much (much) research and YouTube videos.  Responsive design was also a confusing concept to me.  I didn't understand (or know) that the site could look different, and I previously assumed that it automatically was responsive.  Also, through this project, I learned about useEffect, useState, and other lifecycle methods.  Starting this project, I understood none of these except useState, but even that I lacked knowledge in.  Through repeated research and videos, I found out more and more and eventually found my way to writing code using these methods.  I really wanted to give up, truly.  I felt the voices in my head telling me, "You won't understand these methods.  You won't understand how to design a site.  You won't understand how to use a database" but I tried my best to shut them up and complete my goal. Continuing with this project would be great, however, now that I know most of the functionality, it would be a waste of time as I am not learning something new.  Now, that I have grasped a stronger idea of front-end design and back-end functionality, I shall move onto projects that use more skill and expertise.  My long term goals is to be able to create high-level apps by myself and kickstart a startup.  My short term goals are to gather more internship experience, get my first job, and complete a few freelance gigs. I will not be aborting this project, but I will not be working on this often.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Possible upcoming projects:
-- Snapchat Clone (React Native)
-- Instagram Clone (React Native)
-- Finance Management App (React Native)
+### `npm test`
 
-I'm very excited to work on mobile apps, so creating my debut with React Native will be great.
-Thanks to all who were interested in this project,
-Monci
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-DEPLOYED AT:
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Home:
-![image](https://user-images.githubusercontent.com/44330082/204078629-d3523b35-693a-47c2-8017-22063882643b.png)
+### `npm run eject`
 
-![image](https://user-images.githubusercontent.com/44330082/204078642-99187068-1644-4951-b275-0964942966f6.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-![image](https://user-images.githubusercontent.com/44330082/204078652-855e7ed0-7993-47de-936e-c5965ecc87de.png)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Register:
-![image](https://user-images.githubusercontent.com/44330082/204078679-00c3fe85-0112-4590-93c5-4d07ab5680a2.png)
+## Learn More
 
-Login:
-![image](https://user-images.githubusercontent.com/44330082/204078687-5d8f13b0-6b09-4e6b-b298-bb4001130ac7.png)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-*Both register and login have popup anims
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Chats:
-![image](https://user-images.githubusercontent.com/44330082/204123660-8048ea61-46fe-417a-8043-33b1dccfc462.png)
+### Code Splitting
 
-![image](https://user-images.githubusercontent.com/44330082/204123669-2758d451-b716-439a-be29-6cc66d5f71e3.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-![image](https://user-images.githubusercontent.com/44330082/204123785-2da36d23-b8ed-47f1-910a-b4d57345f627.png)
+### Analyzing the Bundle Size
 
-![image](https://user-images.githubusercontent.com/44330082/204123797-83dc8658-d035-421a-bbe3-173091314c83.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

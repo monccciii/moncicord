@@ -1,0 +1,195 @@
+.box {
+    margin: auto auto;
+    padding: 350px;
+    height: 100px;
+    width: 400px;
+    border:2px black solid;
+    overflow: scroll;
+}
+
+.fluidcontainerbox {
+    margin: 0 5rem;
+    margin-top: 5vh;
+    height: 700px;
+    width: 80vw;
+
+}
+.fluidcontainerbox2 {
+    overflow: scroll;
+}
+
+.outline {
+    border: 5px black solid; 
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.message {
+    font-family: 'Roboto', sans-serif;
+    margin: auto auto;
+    font-size: 15px;
+    height: 50px;
+    border-width: 0px 0.05em 0.005em 0; /* top right bottom left */
+    border-style: solid solid solid solid;
+    border-color: white;
+}
+
+.fromname {
+    text-align:left;
+    font-size: large;
+}
+
+.textcontent {
+    text-align: center;
+}
+
+.entertext {
+    margin: auto auto;
+    font-size: small;
+    padding: 0px;
+    height: 50px;
+    width: 700px;
+}
+
+.navbar_ li {
+    font-family: 'Racing Sans One', cursive;
+    margin-left: 1.5vw;
+    display: inline-block;
+}
+
+.navbar_ li:hover {
+    text-decoration:underline;
+}
+
+.navbar_ .buttonb {
+    float: right;
+    margin-left: 5vw;
+}
+
+.companyname {
+    color: white;
+}
+.ico {
+    position: relative;
+    margin-top: 1vh;
+    width:50px;
+    
+    height: auto;
+}
+.upperdiv {
+    font-size: large;
+    background-color:#36393F;
+    height: 60%;
+    width: 100%;
+}
+.lowerdiv {
+    font-family: 'Roboto', sans-serif;
+    height: 150vh;
+    width: 100%;
+}
+
+.responsiveimg1 {
+    float: right;
+}
+
+.upperdivtext {
+    
+    display:inline-block;
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    color:white;
+}
+
+.disbutton {
+    font-family: 'Racing Sans One', cursive;
+    background-color: #5865F2;
+    font-size: 50px
+
+}
+
+#indented {
+    margin-left: 10vw;
+}
+
+.li2 {
+    color: white;
+    font-size: medium;
+    margin: 0 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .responsiveimg1 {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .li2 {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #indented {
+        margin-left: 5vw;
+    }
+    .li2 {
+        
+        margin: 0 -1rem;
+    }
+}
+
+.footer {
+    height:50vh;
+    width: 100% !important;
+    position: relative;
+    bottom: 0;
+    background-color: #06001c;
+}
+
+.backimg1 {
+    background-image: url('./images/background1.png')
+}
+
+.registerloginbox {
+    border-radius: 10px;
+    text-align:center;
+    height: auto;
+    padding: auto;
+    width: 40vw;
+    background-color: #36393F
+}
+
+.loginn {
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+
+}
+
+.chatbg {
+    background-color:#36393F;
+    color: white;
+    height:100vh;
+}
+
+.forcedbg {
+    background-color:#36393F;
+}
+.chatbg a {
+    color: white;
+    text-decoration: none;
+}
+.chatheader {
+    background-color: #28282B;
+}
+
+.sideborder {
+    border-width: 0px 0.05em 0px 0; /* top right bottom left */
+    border-style: solid solid solid solid;
+    border-color: white;
+}
