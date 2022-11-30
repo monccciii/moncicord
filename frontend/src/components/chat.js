@@ -6,7 +6,7 @@ import { Button, Form, Container, Row, Col } from "react-bootstrap";
 import '../styles/main.css';
 import MessageComp from './messageComp';
 import discordicon from '../styles/images/discordicon.png'
-
+import Zoom from 'react-reveal/Zoom';
 
 function Chat() {
     const [user, setUser] = useState('');
@@ -120,12 +120,14 @@ useEffect(() => {
                 />
                 </a>
                 {chatrooms.map((chatroom)=>
+                <Zoom>
                 <a href={'/chat/' + chatroom.chatroomname}>
                 <MessageComp
                 name={chatroom.chatroomname}
                 onClick={() => {console.log(chatroom.chatroomname)}}
                 />
                 </a>
+                </Zoom>
                 )
 
 
@@ -133,10 +135,12 @@ useEffect(() => {
                 </Col>
                 <Col sm={8}>
                 {messages.map((message) =>
+                <Zoom>
                 <MessageComp
                 name={message.from}
                 message={message.messagecontent}
                 />
+                </Zoom>
                 )
                 }
                 </Col>

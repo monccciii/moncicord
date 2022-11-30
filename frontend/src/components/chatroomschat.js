@@ -5,8 +5,8 @@ import axios from 'axios';
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
 import '../styles/main.css';
 import MessageComp from './messageComp';
-import discordicon from '../styles/images/discordicon.png'
-
+import discordicon from '../styles/images/discordicon.png';
+import Zoom from 'react-reveal';
 
 function ChatroomsChat() {
     const chatroom = useParams();
@@ -30,6 +30,7 @@ function ChatroomsChat() {
         console.log(currentChatroom.crn)
         getMessages()
     }, [reducerValue]);
+
 
 
 function getMessages() {
@@ -125,12 +126,14 @@ useEffect(() => {
                 />
                 </a>
                 {chatrooms.map((chatroom)=>
+                <Zoom>
                 <a href={'/chat/' + chatroom.chatroomname}>
                 <MessageComp
                 name={chatroom.chatroomname}
                 onClick={() => {console.log(chatroom.chatroomname)}}
                 />
                 </a>
+                </Zoom>
                 )
 
 
@@ -138,10 +141,12 @@ useEffect(() => {
                 </Col>
                 <Col sm={8}>
                 {messages.map((message) =>
+                <Zoom>
                 <MessageComp
                 name={message.from}
                 message={message.messagecontent}
                 />
+                </Zoom>
                 )
                 }
                 </Col>
