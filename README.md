@@ -31,7 +31,7 @@ Possible upcoming projects:
 
 I'm very excited to work on mobile apps, so creating my debut with React Native will be great.
 Thanks to all who were interested in this project,
-Monci
+Monci, 9/27/22
 
 DEPLOY FAILURE:
 The animations I used were from an outdated library and caused errors. They need to be replaced with new animations (framer-motion). I will return to this project soon - Monci, 1/7/2023
